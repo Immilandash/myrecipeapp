@@ -114,8 +114,12 @@ body{
     }
     .input{
         width: 90%;
+        padding: 5px 0 5px 10px;
     }
     .sidebar{
         display: none;
+    }
+    .myHeading{
+        font-size: 2rem;
     }
 }
