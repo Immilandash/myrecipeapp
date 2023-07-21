@@ -34,6 +34,9 @@ body{
 .recipe{
     width: 70%;
     overflow-y: auto;
+    padding-bottom: 4rem;
+    background: rgba(255, 255, 0, 0.115);
+
 }
 .recipe__img{
     width: 100%;
@@ -47,6 +50,16 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.anchors__icon--bordered{
+    border: 2px solid black;
+    padding: 5px;
+}
+.anchors__icon--bordered:hover{
+    background: whitesmoke;
+}
+.hidden--toggler{
+    display: none;
+}
 .input{
     width: 45%;
     display: flex;
@@ -54,7 +67,6 @@ body{
     border-radius: 20px;
     overflow: hidden;
     justify-content: space-between;
-    /* padding: 5px 5px 5px 10px; */
 }
 .input__search{
     border: none;
@@ -89,6 +101,31 @@ body{
 .anchors__icon{
     height: 1rem;
 }
+.myList{
+    padding: 10px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    margin: 5px 0;
+    background: linear-gradient(to right, white, wheat, pink);
+    text-align: center;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+.description{
+    font-size: 0.7rem;
+    padding: 10px;
+}
+li:hover{
+    background: whitesmoke;
+}
+.publisher{
+    padding: 0.5rem;
+    background: linear-gradient(to right, white, wheat, pink);
+    width: fit-content;
+    border-radius: 20px;
+    margin: 0 auto;   
+    font-size: 0.5rem;
+}
 
 @media screen and (max-width: 868px) {
     .input{
@@ -114,6 +151,7 @@ body{
     .main__body{
         flex-direction: column-reverse;
         height: 70%;
+        position: relative;
     }
     .recipe{
         width: 100%;
@@ -129,5 +167,14 @@ body{
     }
     .myHeading{
         font-size: 2rem;
+    }
+    .hidden--toggler{
+        display: block;
+    }
+    .sidebar--visible--tabs{
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 50%;
     }
 }
