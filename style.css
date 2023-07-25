@@ -208,6 +208,8 @@ li:hover{
         z-index: 99000;
         background: white;
         padding: 10px;
-        height: inherit;
+        overflow-y: scroll;
+        padding-bottom: 5rem;
+        max-height: 100vh;
     }
 }
