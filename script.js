@@ -105,11 +105,12 @@ const loadSearchResults = async function(query){
         console.log(err)
     }
 }
-document.querySelector(".input__btn").addEventListener("click",
-function(){
-    loadSearchResults(`${inpValue}`);
-}
-)
+loadSearchResults('pizza')
+// document.querySelector(".input__btn").addEventListener("click",
+// function(){
+//     loadSearchResults(`${inpValue}`);
+// }
+// )
 
 
 
